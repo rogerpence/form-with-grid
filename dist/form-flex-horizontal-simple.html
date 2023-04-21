@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>    
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+           <fieldset>
+              <legend>Customer Information</legend>
+     
+              <form class="form1" action="">
+                 <div class="form-field">   
+                    <label for="cmcustno">Number</label>
+                    <input id="cmcustno" name="cmcustno" type="number" required placeholder="Number">
+                    <div class="error-message"></div>
+                </div>   
+
+                 <div class="button-container">
+                    <button class="tester ok-button">OK</button>
+                 </div>   
+                
+              </form>
+           </fieldset>      
+        </div>
+     </div>    
+    <hr>
+    <div class="main-container">
+        <div class="form-container">
+           <fieldset>
+              <legend>Customer Information</legend>
+     
+              <form class="form1" action="">
+                 <div class="form-field">   
+                    <label for="cmcustno">Number</label>
+                    <input id="cmcustno" name="cmcustno" type="number" required placeholder="Number">
+                    <div data-error-for="cmcustno" class="error-message"></div>
+                </div>   
+
+                 <div class="form-field">   
+                    <label for="cmname">Name</label>
+                    <input id="cmname" name="cmname" type="text" required placeholder="Name">                    
+                    <div data-error-for="cmname" class="error-message"></div>
+                </div>   
+
+                 <div class="form-field">
+                    <label for="cmaddr1">Address</label>
+                    <input id="cmaddr1" type="text" required placeholder="Address">
+                    <div data-error-for="cmaddr1" class="error-message"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="cmcity">City</label>
+                    <input id="cmcity" type="text" required placeholder="City">
+                    <div data-error-for="cmcity" class="error-message"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="cmstate">State</label>
+                    <input class="w-33" id="cmstate" type="text" required placeholder="State">
+                    <div data-error-for="cmstate" class="error-message"></div>
+                </div>     
+
+                <div class="form-field">
+                    <label for="cmpostcode">Zip code</label>
+                    <input class="w-33" id="cmpostcode" type="text" placeholder="Zip code">
+                    <div data-error-for="cmpostcode" class="error-message"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="cmfax">Fax number</label>
+                    <input class="w-33" id="cmfax" class="use-spinddner" type="number" placeholder="Fax number">
+                    <div data-error-for="cmfax" class="error-message"></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="cmphone">Phone number</label>
+                    <input class="w-33" id="cmphone" type="text" placeholder="Phone number">
+                    <div data-error-for="cmphone" class="error-message">this is incorrect</div>
+                </div>   
+ 
+                 <div class="form-field">
+                    <label for="cmactive">Active</label>
+                    <div class="checkbox-container">
+                        <input class="horizontal-checkbox" id="cmactive" type="checkbox">
+                    </div>
+                 </div>
+
+                 <div class="button-container">
+                    <a href="#">Cancel</a>
+                    <button class="tester ok-button">OK</button>
+                 </div>   
+
+                 <small>The red outlined fields are required fields</small>
+                 
+              </form>
+           </fieldset>      
+        </div>
+     </div>    
+</body>
+</html>

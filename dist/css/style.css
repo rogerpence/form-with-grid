@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input:not(.use-spinner)::-webkit-outer-spin-button,
+input:not(.use-spinner)::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number]:not(.use-spinner) {
+  -moz-appearance: textfield;
+}
+
+input:is([required]):placeholder-shown {
+  border-color: red;
+  border-width: 0.1rem;
+}
+
+input:not(:placeholder-shown) {
+  border-color: green;
+  border-width: 0.1rem;
+}
+
+div.container {
+  max-width: 70vw;
+  margin: 0 auto;
+  border: 1px red dotted;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-container {
+  margin-top: 5rem;
+}
+
+.form-container {
+  background-color: whitesmoke;
+  list-style-type: none;
+  padding: 4;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.form-container fieldset {
+  border-radius: 0.25rem;
+  position: relative;
+}
+.form-container legend {
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  font-size: 1.2rem;
+  background-color: lightgray;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+.form-container form {
+  padding-top: 4rem;
+}
+
+.form-field {
+  display: grid;
+  grid-template-columns: 8rem 2fr;
+  grid-template-rows: auto;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+.form-field div:not(:empty).error-message {
+  padding-top: 0.2rem;
+  grid-column-start: 2;
+  display: block;
+  color: red;
+  font-size: 0.8rem;
+}
+.form-field > input, .form-field > button {
+  padding: 0.5em;
+}
+.form-field > button {
+  background: gray;
+  color: white;
+  border: 0;
+}
+.form-field input[type=checkbox],
+.form-field input[type=radio] {
+  margin-left: 0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  accent-color: green;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 2rem;
+}
+.button-container button {
+  font-size: 1.2rem;
+  width: 6rem;
+  padding: 0.6rem 1rem;
+  color: white;
+  border-radius: 0.25rem;
+}
+.button-container button.cancel-button {
+  background-color: red;
+}
+.button-container button.ok-button {
+  background-color: green;
+}
+.button-container a {
+  color: black;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-75 {
+  width: 75%;
+}
