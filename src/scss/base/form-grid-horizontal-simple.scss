@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+ }
+ 
+ .main-container {
+    margin-top: 5rem;
+ }
+ 
+ .form-container {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 4;
+    max-width: 700px;
+    margin: 0 auto;   
+ 
+    fieldset {
+       border-radius: .25rem;
+       position: relative;   
+    }
+    
+    legend {
+       position: absolute;
+       top: -20px;
+       left: 25px;
+       font-size: 1.2rem;
+       background-color: lightgray;
+       color: black;
+       padding: .5rem 1rem;;
+       // border: black 1px solid;
+       border-radius: .25rem;
+    
+    }
+    
+    form {
+       padding-top: 4rem;
+    }
+
+}
+ 
+.form-field {
+    display: grid;
+    grid-template-columns: 8rem 2fr;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: .5rem 2rem;
+
+    & div:not(:empty).error-message {
+        padding-top: .2rem;
+        grid-column-start: 2;
+        display: block;
+        color: red;
+        font-size: .8rem;;
+    }
+
+    & > input,
+    & > button {
+       padding: .5em;
+    }
+ 
+    & > button {
+       background: gray;
+       color: white;
+       border: 0;
+    }     
+    
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-left: .1rem;  // Push it left a litte because width and height move it right a bit.
+        width: 1.5rem;
+        height: 1.5rem;
+        accent-color: green;
+    }
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+    
+    button {
+    font-size: 1.2rem;
+    width: 6rem;
+    padding: .6rem 1rem;
+    color: white;
+    border-radius: .25rem;
+    
+    &.cancel-button {
+        background-color: red;
+    }
+    
+    &.ok-button {
+        background-color: green;
+    }   
+    }
+    
+    a {
+        color: black;
+    }
+}
+
